@@ -19,7 +19,6 @@ public class Lab {
 
         Scanner in = new Scanner(System.in);
         double[] vars = new double[10];
-        double mean, variance, stddev;
 
         System.out.print("Enter ten numbers: ");
 
@@ -27,25 +26,8 @@ public class Lab {
         for (int i = 0; i < vars.length; i++)
             vars[i] = in.nextDouble();
 
-        // Calculate the mean
-        mean = findAverage(vars);
-
-        //Subtract the mean from each number and square the result (the squared difference)
-        for (int i = 0; i < vars.length; i++) {
-            vars[i] = Math.pow((vars[i] - mean), 2);
-            System.out.println(vars[i]);
-        }
-
-        //Calculate average of new results
-        variance = findAverage(vars);
-
-        // Standard deviation is square root of the variance
-        stddev = Math.sqrt(variance);
-
-        //Output results
-        System.out.println("The mean is " + mean);
-        System.out.println("The standard deviation is " + stddev);
-
+        System.out.println("The mean is " + findAverage(vars));
+        System.out.println("The standard deviation is " + findStandardDeviation(vars));
     }
 
     private static double findAverage(double[] dataset) {
@@ -54,5 +36,20 @@ public class Lab {
             sum += data;
         }
         return sum / dataset.length;
+    }
+
+    private static double findStandardDeviation(double[] dataset) {
+        double squaredsum = 0;
+        double sum = 0;
+
+        for (double data : dataset) {
+            squaredsum += data * data;
+            sum += data;
+        }
+        double squaredAverage = (sum * sum) / dataset.length;
+
+        double variance = (squaredsum - squaredAverage) / (dataset.length - 1);
+
+        return Math.sqrt(variance);
     }
 }
