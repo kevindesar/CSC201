@@ -32,8 +32,9 @@ public class MeanAndStandardDev {
 
         System.out.print("Enter ten numbers: ");
 
-        for (int i = 0; i < numbers.length; i++)
+        for (int i = 0; i < numbers.length; i++) {
             numbers[i] = in.nextDouble();
+        }
 
         //-----OUTPUT DATA------
         System.out.println("The mean is " + findMean(numbers));
