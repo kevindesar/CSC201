@@ -8,13 +8,14 @@ import java.util.Scanner;
  *         MeanAndStandardDev.java
  *
  *         The scanner reads 10 numbers from the command line (either separated by spaces on the same line
- *         or one per line) and stores them in an array called 'vars'.  I separated the formulas out into their
- *         own methods for readability.  The findMean() method uses the vars array to calculate the mean by looping
+ *         or one per line) and stores them in an array called 'numbers'.  I separated the formulas out into their
+ *         own methods for readability.  The findMean() method uses the numbers array to calculate the mean by looping
  *         through the array and summing all values together then dividing by the length of the array.
- *         The findStandardDeviation() method also uses the vars array to calculate the standard deviation using the
- *         formula in textbook.
+ *         The findStandardDeviation() method also uses the numbers array to calculate the standard deviation using the
+ *         formula in textbook.  Basically the square root of the summation of the data squared minus the average of
+ *         the squared sum, divided by the sample size minus one.
  *
- *         Input:   double[] vars to hold numbers read by input scanner
+ *         Input:   double[] numbers to hold numbers read by input scanner
  *         Output:  findMean() and findStandardDeviation() print data directly to console via System.out commands.
  *         Processing:
  *
@@ -27,16 +28,16 @@ public class MeanAndStandardDev {
 
         //-----INPUT DATA------
         Scanner in = new Scanner(System.in);
-        double[] vars = new double[10];
+        double[] numbers = new double[10];
 
         System.out.print("Enter ten numbers: ");
 
-        for (int i = 0; i < vars.length; i++)
-            vars[i] = in.nextDouble();
+        for (int i = 0; i < numbers.length; i++)
+            numbers[i] = in.nextDouble();
 
         //-----OUTPUT DATA------
-        System.out.println("The mean is " + findMean(vars));
-        System.out.println("The standard deviation is " + findStandardDeviation(vars));
+        System.out.println("The mean is " + findMean(numbers));
+        System.out.println("The standard deviation is " + findStandardDeviation(numbers));
     }
 
     //--------PROCESSING-------
