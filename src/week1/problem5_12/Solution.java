@@ -1,4 +1,4 @@
-package problem5_12;
+package week1.problem5_12;
 
 /**
  * Ben Turney
