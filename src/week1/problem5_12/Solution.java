@@ -1,9 +1,13 @@
 package week1.problem5_12;
 
 /**
- * Ben Turney
  * CSC 201-E81N
+ * Problem 5.12 (page 193)
+ * Solution.java
+ *
  * Use a while loop to find the smallest integer n such that n^2 is greater than 12000.
+ *
+ * @author Ben Turney
  */
 public class Solution {
     public static void main(String[] args) {

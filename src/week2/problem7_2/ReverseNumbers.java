@@ -3,6 +3,10 @@ package week2.problem7_2;
 import java.util.Scanner;
 
 /**
+ * CSC 201-E81N
+ * Problem 7.2 (page 276)
+ * ReverseNumbers.java
+ *
  * Reads ten integers and displays them in the reverse of the order in which they were read.
  *
  * @author Ben Turney
