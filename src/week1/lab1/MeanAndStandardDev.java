@@ -1,26 +1,26 @@
-package lab1;
+package week1.lab1;
 
 import java.util.Scanner;
 
 /**
- *         CSC 201-E81N
- *         Problem 5.45 (page 199-200)
- *         MeanAndStandardDev.java
+ * CSC 201-E81N
+ * Problem 5.45 (page 199-200)
+ * MeanAndStandardDev.java
+ * <p>
+ * The scanner reads 10 numbers from the command line (either separated by spaces on the same line
+ * or one per line) and stores them in an array called 'numbers'.  I separated the formulas out into their
+ * own methods for readability.  The findMean() method uses the numbers array to calculate the mean by looping
+ * through the array and summing all values together then dividing by the length of the array.
+ * The findStandardDeviation() method also uses the numbers array to calculate the standard deviation using the
+ * formula in textbook.  Basically the square root of the summation of the data squared minus the average of
+ * the squared sum, divided by the sample size minus one.
+ * <p>
+ * Input:   double[] numbers to hold numbers read by input scanner
+ * Output:  findMean() and findStandardDeviation() print data directly to console via System.out commands.
+ * Processing: findMean() finds the mean. findStandardDeviation finds the standard deviation.
  *
- *         The scanner reads 10 numbers from the command line (either separated by spaces on the same line
- *         or one per line) and stores them in an array called 'numbers'.  I separated the formulas out into their
- *         own methods for readability.  The findMean() method uses the numbers array to calculate the mean by looping
- *         through the array and summing all values together then dividing by the length of the array.
- *         The findStandardDeviation() method also uses the numbers array to calculate the standard deviation using the
- *         formula in textbook.  Basically the square root of the summation of the data squared minus the average of
- *         the squared sum, divided by the sample size minus one.
- *
- *         Input:   double[] numbers to hold numbers read by input scanner
- *         Output:  findMean() and findStandardDeviation() print data directly to console via System.out commands.
- *         Processing: findMean() finds the mean. findStandardDeviation finds the standard deviation.
- *
- *         @author Ben Turney
- *         @version 1.0 10/22/14
+ * @author Ben Turney
+ * @version 1.0 10/22/14
  */
 public class MeanAndStandardDev {
 
@@ -59,6 +59,7 @@ public class MeanAndStandardDev {
 
     /**
      * Finds the standard deviation of the dataset provided
+     *
      * @param dataset The group of numbers to find the standard deviation of
      * @return The standard deviation of the numbers
      */
