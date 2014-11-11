@@ -18,6 +18,9 @@ import java.math.BigDecimal;
  * every factorial (and inverse of the factorial) between 1 and n and adds the inverses to 1 to complete the series.
  *
  * findFactorial() and invertFactorial() are helper methods to maintain readability.
+ *
+ * @author Ben Turney
+ * @version 1.0 11/11/14
  */
 public class ApproximateE {
     //--------INPUT DATA--------//
