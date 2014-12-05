@@ -13,7 +13,9 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 /**
- * CSC 201-E81N Problem 16.5 (page 669) NumberConverter.java
+ * CSC 201-E81N
+ * Problem 16.5 (page 669)
+ * NumberConverter.java
  * <p>
  * This class converts numbers between decimal, hexadecimal, and binary values using the JavaFX API. Enter a valid
  * number into any of the three text fields and press Enter to convert the number into the remaining two formats.  If an
